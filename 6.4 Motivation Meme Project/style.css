@@ -23,6 +23,7 @@ html{
   
   img{
     width: 100%;
+    border: 10px solid white;
   }
   div{
     width: 50%;
@@ -32,6 +33,7 @@ html{
   h1{
     text-transform: uppercase;
     text-align: center;
+    font-family: "Libre Baskerville", serif;
   }
   p{
     text-align: center;
