@@ -1,1 +1,28 @@
 /* Write your code here: */
+h1, h2{
+    color: blueviolet;
+}
+
+/* div > p{
+    color: firebrick;
+} gehiin orond class aar n duudad tuunihe child iig songoj ogoh n zow ym bn*/
+
+.box > p{
+    color: firebrick;
+}
+
+/* .list li{
+    color: blue;
+}  mon l deerhte adil oor ijil list classta ul uud bh talta uchraas parent element boloh div -iinhee class eswel id iig ashiglaj bichwel zgr*/
+
+.box li{
+    color: blue;
+}
+li.done{
+    color: seagreen;
+}
+
+/* door bol > gj bichsen bichegu ijil utgatai gj bnshu */
+ul > p.done{
+    font-size: 0.5rem;
+}
