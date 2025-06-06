@@ -11,11 +11,51 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+  text-align: left;
 }
+
 
 footer {
   text-align: right;
   color: midnightblue;
 }
 
+.purpleHeading{
+  color: midnightblue;
+}
+
+.tile-image{
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+
+@media (max-width: 680px) {
+  .logo{
+    width: 150px;
+  }
+}
+
+.card{
+  width: 45%;
+  display: block;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.card img{
+  margin-bottom: 20px;
+  width: 350px;
+  display: inline;
+  object-fit: cover;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
