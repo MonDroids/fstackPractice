@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: left;
 }
 
@@ -30,32 +30,39 @@ footer {
   float: left;
   margin-right: 50px;
 }
-
-
-@media (max-width: 680px) {
-  .logo{
-    width: 150px;
-  }
-}
-
-.card{
+.card {
   width: 45%;
-  display: block;
-  margin-bottom: 30px;
-  text-align: justify;
 }
-
-.card img{
-  margin-bottom: 20px;
-  width: 350px;
-  display: inline;
-  object-fit: cover;
-}
-
 .left{
   float: left;
 }
 
 .right{
   float: right;
+}
+
+@media (max-width: 680px) {
+  .logo{
+    width: 150px;
+  }
+
+h1 {
+  font-size: 3rem;
+  text-align: left;
+}
+
+.card{
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+  text-align: justify;
+ }
+
+.card img{
+  margin-bottom: 20px;
+  width: 300px;
+  display: inline;
+  object-fit: cover;
+ }
+
 }
