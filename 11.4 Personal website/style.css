@@ -1,0 +1,112 @@
+:root {
+  --bg-color: #0b0c2a;
+  --main-color: #ffb400;
+  --text-color: #fff;
+  --sidebar-bg: #ffb400;
+  --sidebar-text: #222;
+  --card-bg: #1e1f3d;
+}
+
+body.light {
+  --bg-color: #f0f0f0;
+  --main-color: #0b0c2a;
+  --text-color: #000;
+  --sidebar-bg: #fff;
+  --sidebar-text: #000;
+  --card-bg: #fff;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: var(--main-color);
+  color: var(--bg-color);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-container button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+  color: var(--bg-color);
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.sidebar {
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.sidebar.hide {
+  transform: translateX(-100%);
+}
+
+.main-content {
+  padding: 30px;
+  flex: 1;
+  background: var(--card-bg);
+  box-sizing: border-box;
+}
+
+.main-content h2 {
+  border-bottom: 2px solid var(--main-color);
+  padding-bottom: 5px;
+}
+
+.skills .skill {
+  margin: 15px 0;
+}
+
+.skills .progress {
+  background: #333;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 12px;
+}
+
+.skills .progress div {
+  background: var(--main-color);
+  height: 100%;
+  width: 0;
+  transition: width 1s ease;
+}
+
+.skills .skill:nth-child(1) .progress div { width: 95%; }
+.skills .skill:nth-child(2) .progress div { width: 90%; }
+.skills .skill:nth-child(3) .progress div { width: 70%; }
+.skills .skill:nth-child(4) .progress div { width: 60%; }
+.skills .skill:nth-child(5) .progress div { width: 60%; }
+.skills .skill:nth-child(6) .progress div { width: 50%; }
+.skills .skill:nth-child(7) .progress div { width: 50%; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    height: 100vh;
+    z-index: 10;
+  }
+}
